@@ -1,0 +1,11 @@
+<a routerLink="">main</a>
+<p>
+  login works!
+</p>
+<ng-container *ngIf="isAuth; then logoutBlock else loginBlock"></ng-container>
+<ng-template #loginBlock>
+  <button (click)="login()">login</button>
+</ng-template>
+<ng-template #logoutBlock>
+  <button (click)="logout()">logout</button>
+</ng-template>
