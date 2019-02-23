@@ -1,0 +1,23 @@
+@import 'src/variables';
+@import 'src/mixin';
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  @include border();
+  @include border-radius();
+  &.input-wrapper-lg{
+    padding: 10px 6px;
+  }
+  .input-ctrl-prefix {
+    margin-right: 6px;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  ::ng-deep input {
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+}

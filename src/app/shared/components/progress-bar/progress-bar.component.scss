@@ -1,0 +1,25 @@
+@import 'src/variables';
+@import 'src/mixin';
+
+.progress-bar {
+  @include border();
+  width: 100%;
+  height: 10px;
+  &.progress-bar-md {
+    height: 12px;
+  }
+  .progress-bar-value {
+    height: 100%;
+    background-color: $colorPrimary;
+  }
+  &.primary {
+    .progress-bar-value {
+      background-color: $colorPrimary;
+    }
+  }
+  &.accent {
+    .progress-bar-value {
+      background-color: $colorAccent;
+    }
+  }
+}

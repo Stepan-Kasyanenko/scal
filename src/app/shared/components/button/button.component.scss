@@ -1,0 +1,29 @@
+@import 'src/variables';
+@import 'src/mixin';
+
+
+.btn {
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  background-color: $colorBackgroundButton;
+  color: inherit;
+  font-size: inherit;
+  @include border();
+  @include border-radius();
+  width: 100%;
+  &.btn-md {
+    padding: 10px 16px;
+  }
+  &.btn-lg {
+    padding: 12px 16px;
+  }
+  &.primary {
+    background-color: $colorPrimary;
+    color: white;
+  }
+  &.accent {
+    background-color: $colorAccent;
+    color: white;
+  }
+}

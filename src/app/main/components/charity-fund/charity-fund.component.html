@@ -1,0 +1,31 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="fund-wrapper">
+  <app-tooltip [trianglePosition]="progress"><span class="bold">$167</span> still needed for this project</app-tooltip>
+  <app-progress-bar color="accent" [value]="progress" size="md"></app-progress-bar>
+  <app-card size="md">
+    <div class="p text-justify">
+      <span class="bold accent">Only 3 days left</span> to fund this project
+    </div>
+    <div class="p text-justify">
+      Join the <span class="bold">42</span> other donors who have<br> already supported this project. Every<br> dollar
+      helps.
+    </div>
+    <div class="row row-gap-md fund-input-block">
+      <app-input class="font-lg" size="lg" prefix="$">
+        <input class="bold" value="50" type="number">
+      </app-input>
+      <app-button class="font-lg" size="lg" color="primary">Give Now</app-button>
+    </div>
+    <div class="p fund-help">
+      <a class="italic" href="#">Why give $50?</a>
+    </div>
+  </app-card>
+  <div class="row row-gap-md fund-actions-block">
+    <app-button size="md">Save for later</app-button>
+    <app-button size="md">Tell tour friends</app-button>
+  </div>
+</div>

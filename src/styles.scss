@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+@import './mixin';
+
+body {
+  color: $colorFontPrimary;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $colorLink;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+  &.accent {
+    color: $colorAccent;
+  }
+
+  &.primary {
+    color: $colorPrimary;
+  }
+}
+
+.p {
+  &:not(:first-child) {
+    margin-top: 16px;
+  }
+  line-height: 1.3em;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.font-lg {
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+
+
+.row {
+  display: flex;
+  &.row-gap-md {
+    > *:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+
+
+

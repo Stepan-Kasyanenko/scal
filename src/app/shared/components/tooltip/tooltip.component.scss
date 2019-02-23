@@ -1,0 +1,23 @@
+@import 'src/variables';
+@import 'src/mixin';
+
+.tooltip {
+  position: relative;
+  @include border-radius();
+  background-color: $colorBackgroundTooltip;
+  color: $colorTooltip;
+  padding: 14px 36px;
+  margin-bottom: 10px;
+  .tooltip-triangle {
+    position: absolute;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    &.tooltip-triangle-bottom {
+      border-width: 5px 5px 0 5px;
+      border-color: $colorBackgroundTooltip transparent transparent transparent;
+      bottom: -5px;
+    }
+  }
+}

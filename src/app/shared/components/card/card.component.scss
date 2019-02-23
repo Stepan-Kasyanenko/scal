@@ -1,0 +1,11 @@
+@import 'src/variables';
+@import 'src/mixin';
+
+.card {
+  position: relative;
+  @include border();
+  &.card-md {
+    padding: 14px 20px;
+  }
+
+}
